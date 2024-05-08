@@ -1010,9 +1010,9 @@ class Data extends AbstractHelper
      *
      * @return bool
      */
-    public function isSurchargeFeeEnabled()
+    public function isSurchargeFeeEnabled($storeId = null)
     {
-        return $this->getConfig('surcharge_fee') == 1;
+        return $this->getConfig('surcharge_fee', $storeId) == 1;
     }
 
     /**
